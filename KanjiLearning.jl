@@ -20,4 +20,7 @@ end
 
 KanjiLearning(dataframe)
 
-# TODO: completar lista kanjis
+# TODO: completar lista kanjis id:6
+# - <https://github.com/LFelipeGomez/JapaneseLearning/issues/2>
+# Luis Felipe Gómez López
+# L.Felipe_Gomez@ciencias.unam.mx
