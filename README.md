@@ -46,3 +46,22 @@ A CSV file is required with the next columns:
 | negativo | 不 | ふとう | 不当 |
 | hermano | 弟 | あにき | あに |
 | ... | ... | ... | ... |
+
+### KanjiBookLearning.jl
+
+This program is designed to practice the kanjis learned by the book *Kanji para recordar I*. So first the user should read the book until some specific lesson and then come to this program to test the learned.
+
+#### Worflow
+
+1. Show the number of kanji (given by the book) and the *keyword*
+2. Waits some seconds while the user should write on paper the respective kanji
+
+
+#### Data Requirements
+A CSV file per lesson is required with the name `KanjiBookPalabras#.csv` where # indicates the number of the lesson. The columns required on each file are:
+
+| español |
+| --- |
+| campo de arroz |
+| boca |
+| ... |
