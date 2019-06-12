@@ -50,3 +50,5 @@ function KanjiMemorize(dataframe)
 end
 
 KanjiMemorize(kanjis)
+
+#TODO Add ArgsParse

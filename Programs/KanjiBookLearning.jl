@@ -25,3 +25,5 @@ last_chapter = 10
 time = 4
 path = "./KanjiBook"
 KanjiBookLearning(start_chapter,last_chapter,time,path)
+
+#TODO Add ArgsParse
