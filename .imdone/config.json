@@ -18,6 +18,7 @@
       "IDEA",
       "NOTE",
       "REVIEW",
+      "MARK",
       "BACKLOG",
       "HELP"
     ]
@@ -43,5 +44,10 @@
     "pedantic": false,
     "smartLists": true,
     "langPrefix": "language-"
+  },
+  "sync": {
+    "id": "5c0752fbf6e892507d838180",
+    "name": "LFelipeGomez/JapaneseLearning",
+    "useImdoneioForPriority": true
   }
 }
