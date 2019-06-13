@@ -4,16 +4,35 @@ using ArgParse
 
 #----------START ARGPARSE----------
 
-ArgumentsSettings = ArgParseSettings()
-@add_arg_table ArgumentsSettings begin
-
+function ParseCommandline()
+    ArgumentsSettings = ArgParseSettings()
+    @add_arg_table ArgumentsSettings begin
+        "--dataset_path", "-p"
+            help = "Path to the folder where the csv are"
+            arg_type = String
+            default = "../Datasets/KanjisNs/"
+        "--time", "-t"
+            help = "Time between outputs"
+            arg_type = Int64
+            default = 5
+    end
+    return parse_args(ArgumentsSettings)
 end
 
+parsed_args = ParseCommandline()
+
+function main(parsed_args)
+    println("Parsed args:")
+    for (arg,val) in parsed_args
+        println(" $arg => $val")
+    end
+end
+
+main(parsed_args)
 
 #----------END ARGPARSE-------------
 
-dataframe = DataFrame(load("./Datasets/KanjisN4.csv"))
-verbos_g1 = DataFrame(load("VerbosG1.csv"))
+#----------START DEFINITIONS---------
 
 function KanjiLearning(dataframe, time= 5)
     long = size(dataframe)[1]
@@ -29,7 +48,15 @@ function KanjiLearning(dataframe, time= 5)
     end
 end
 
+#------------END DEFINITIONS------------
+
+#------------START EXECUTION------------
+
+path = parsed_args["dataset_path"] * "KanjisN4.csv"
+dataframe = DataFrame(load(path))
 KanjiLearning(dataframe)
+
+#------------END EXECUTION---------------
 
 # TODO: completar lista kanjis id:6
 # - <https://github.com/LFelipeGomez/JapaneseLearning/issues/2>
