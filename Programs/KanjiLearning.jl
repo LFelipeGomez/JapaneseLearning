@@ -58,7 +58,8 @@ end
 
 path = parsed_args["folder_path"] * "KanjisN" * string(parsed_args["level"]) * ".csv"
 dataframe = DataFrame(load(path))
-KanjiLearning(dataframe)
+time = parsed_args["time"]
+KanjiLearning(dataframe, time)
 
 #------------END EXECUTION---------------
 
