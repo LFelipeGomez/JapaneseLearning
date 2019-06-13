@@ -15,7 +15,7 @@ This program accept the next arguments:
 
 |argument|short|help|type|default|
 | --- | --- | --- | --- | --- |
-|--dataset_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjisNs/"|
+|--folder_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjisNs/"|
 |--time|-t|Time between outputs|`Int64`|5|
 |--level|-N| Level (N#) to be learned|`Int64`|4|
 
@@ -39,6 +39,15 @@ A CSV file is required with the next columns:
 ### KanjiTest.jl
 
 This program is designed to test and practice the kanjis learned previously (by `KanjiLearning.jl`). The program divides the kanjis from the database in two sets: **to learn** and **learned**. At the beginning all kanjis are part of the set **to learn** and just when the user type correctly the kanji as part of any word then the kanji is take to the set **learned**.
+
+#### ArgParse
+
+This program accept the next arguments:
+
+|argument|short|help|type|default|
+| --- | --- | --- | --- | --- |
+|--folder_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjisNs/"|
+|--level|-N| Level (N#) to be learned|`Int64`|4|
 
 #### Worflow
 
