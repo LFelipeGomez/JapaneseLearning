@@ -79,6 +79,8 @@ A CSV file with the name `KanjisN#.csv `, where **#** indicates the number of th
 
 This program is designed to practice the kanjis learned by the book *Kanji para recordar I*. So first the user should read the book until some specific lesson and then come to this program to test the learned.
 
+![](./Animations/KanjiBookLearning.gif)
+
 #### ArgParse
 
 This program accept the next arguments:
