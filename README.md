@@ -2,7 +2,7 @@
 
 # JapaneseLearning
 
-This repository consist in various programs to help the learning of Japanese Kanjis.
+This repository consist in multiple programs to help the learning of Japanese Kanjis.
 
 ## Programs
 ### KanjiLearning.jl
