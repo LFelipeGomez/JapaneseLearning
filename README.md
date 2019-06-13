@@ -36,6 +36,8 @@ A CSV file with the name `KanjisN#.csv `, where **#** indicates the number of th
 | hermano | 弟 | あにき | あに |
 | ... | ... | ... | ... |
 
+---
+
 ### KanjiTest.jl
 
 This program is designed to test and practice the kanjis learned previously (by `KanjiLearning.jl`). The program divides the kanjis from the database in two sets: **to learn** and **learned**. At the beginning all kanjis are part of the set **to learn** and just when the user type correctly the kanji as part of any word then the kanji is take to the set **learned**.
@@ -67,6 +69,8 @@ A CSV file with the name `KanjisN#.csv `, where **#** indicates the number of th
 | hermano | 弟 | あにき | あに |
 | ... | ... | ... | ... |
 
+---
+
 ### KanjiBookLearning.jl
 
 This program is designed to practice the kanjis learned by the book *Kanji para recordar I*. So first the user should read the book until some specific lesson and then come to this program to test the learned.
@@ -97,6 +101,7 @@ A CSV file per lesson is required with the name `KanjiBookPalabras#.csv` where *
 | boca |
 | ... |
 
+---
 
 #### Glosary
 
