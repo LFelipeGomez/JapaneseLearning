@@ -9,6 +9,14 @@ This repository consist in multiple programs to help the learning of Japanese Ka
 
 This program is designed to learning a specific level of Kanji (N5-N1) associating a keyword (spanish) to his respective kanji and an example (hiragana and kanji version).
 
+#### ArgParse
+
+This programs accept the next arguments:
+
+| argument | help | type | default |
+| --- | --- | --- | --- | --- |
+| dataset_path | Path to the folder where the csv are | `String` | "../Datasets/KanjisNs/" |  
+
 #### Workflow
 
 1. Shows the *keyword*
