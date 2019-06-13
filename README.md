@@ -9,6 +9,8 @@ This repository consist in multiple programs to help the learning of Japanese Ka
 
 This program is designed to learning a specific level of Kanji (N5-N1) associating a keyword (spanish) to his respective kanji and an example (hiragana and kanji version).
 
+![](./Animations/KanjiLearning.gif)
+
 #### ArgParse
 
 This program accept the next arguments:
