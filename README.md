@@ -28,7 +28,7 @@ This program accept the next arguments:
 
 #### Data Requirements
 
-A CSV file is required with the next columns:
+A CSV file with the name `KanjisN#.csv `, where **#** indicates the number of the level, is required with the next columns:
 
 | español | kanji | ejemplo | ejemplokanji |
 | --- | --- | --- | --- |
@@ -59,7 +59,7 @@ This program accept the next arguments:
 
 #### Data requirements
 
-A CSV file is required with the next columns:
+A CSV file with the name `KanjisN#.csv `, where **#** indicates the number of the level, is required with the next columns:
 
 | español | kanji | ejemplo | ejemplokanji |
 | --- | --- | --- | --- |
