@@ -1,7 +1,18 @@
 using DataFrames
 using CSVFiles
+using ArgParse
 
-kanjis = DataFrame(load("KanjisN4.csv"))
+#----------START ARGPARSE----------
+
+ArgumentsSettings = ArgParseSettings()
+@add_arg_table ArgumentsSettings begin
+
+end
+
+
+#----------END ARGPARSE-------------
+
+dataframe = DataFrame(load("./Datasets/KanjisN4.csv"))
 verbos_g1 = DataFrame(load("VerbosG1.csv"))
 
 function KanjiLearning(dataframe, time= 5)
