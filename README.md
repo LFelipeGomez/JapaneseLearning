@@ -11,13 +11,13 @@ This program is designed to learning a specific level of Kanji (N5-N1) associati
 
 #### ArgParse
 
-This programs accept the next arguments:
+This program accept the next arguments:
 
 |argument|short|help|type|default|
 | --- | --- | --- | --- | --- |
 |--dataset_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjisNs/"|
-|--time|-t|Time between outputs|Int64|5|
-|--level|-N| Level (N#) to be learned|Int64|4|
+|--time|-t|Time between outputs|`Int64`|5|
+|--level|-N| Level (N#) to be learned|`Int64`|4|
 
 
 #### Workflow
