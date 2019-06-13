@@ -7,7 +7,7 @@ using ArgParse
 function ParseCommandline()
     ArgumentsSettings = ArgParseSettings()
     @add_arg_table ArgumentsSettings begin
-        "--dataset_path", "-p"
+        "--folder_path", "-p"
             help = "Path to the folder where the csv are"
             arg_type = String
             default = "../Datasets/KanjisNs/"
@@ -56,7 +56,7 @@ end
 
 #------------START EXECUTION------------
 
-path = parsed_args["dataset_path"] * "KanjisN" * string(parsed_args["level"]) * ".csv"
+path = parsed_args["folder_path"] * "KanjisN" * string(parsed_args["level"]) * ".csv"
 dataframe = DataFrame(load(path))
 KanjiLearning(dataframe)
 
