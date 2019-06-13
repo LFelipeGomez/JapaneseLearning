@@ -15,6 +15,10 @@ function ParseCommandline()
             help = "Time between outputs"
             arg_type = Int64
             default = 5
+        "--level", "-N"
+            help = "Level (N#) to be studied"
+            arg_type = Int64
+            default = 4
     end
     return parse_args(ArgumentsSettings)
 end
@@ -52,7 +56,7 @@ end
 
 #------------START EXECUTION------------
 
-path = parsed_args["dataset_path"] * "KanjisN4.csv"
+path = parsed_args["dataset_path"] * "KanjisN" * string(parsed_args["level"]) * ".csv"
 dataframe = DataFrame(load(path))
 KanjiLearning(dataframe)
 
