@@ -71,6 +71,17 @@ A CSV file is required with the next columns:
 
 This program is designed to practice the kanjis learned by the book *Kanji para recordar I*. So first the user should read the book until some specific lesson and then come to this program to test the learned.
 
+#### ArgParse
+
+This program accept the next arguments:
+
+|argument|short|help|type|default|
+| --- | --- | --- | --- | --- |
+|--folder_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjiBook/"|
+|--time|-t|Time between outputs|`Int64`|5|
+|--start_chapter|-s| Chapter from where the program shall start|`Int64`|1|
+|--final_chapter|-f| Chapter until where the program shall end|`Int64`|1|
+
 #### Worflow
 
 1. Shows the number of kanji (given by the book) and the *keyword*
