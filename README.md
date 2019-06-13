@@ -44,6 +44,8 @@ A CSV file with the name `KanjisN#.csv `, where **#** indicates the number of th
 
 This program is designed to test and practice the kanjis learned previously (by `KanjiLearning.jl`). The program divides the kanjis from the database in two sets: **to learn** and **learned**. At the beginning all kanjis are part of the set **to learn** and just when the user type correctly the kanji as part of any word then the kanji is take to the set **learned**.
 
+![](./Animations/KanjiTest.gif)
+
 #### ArgParse
 
 This program accept the next arguments:
