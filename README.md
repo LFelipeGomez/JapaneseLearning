@@ -13,9 +13,12 @@ This program is designed to learning a specific level of Kanji (N5-N1) associati
 
 This programs accept the next arguments:
 
-| argument | help | type | default |
+|argument|short|help|type|default|
 | --- | --- | --- | --- | --- |
-| dataset_path | Path to the folder where the csv are | `String` | "../Datasets/KanjisNs/" |  
+|--dataset_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjisNs/"|
+|--time|-t|Time between outputs|Int64|5|
+|--level|-N| Level (N#) to be learned|Int64|4|
+
 
 #### Workflow
 
