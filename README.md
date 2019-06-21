@@ -19,7 +19,7 @@ This program accept the next arguments:
 |argument|short|help|type|default|
 | --- | --- | --- | --- | --- |
 |--folder_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjisNs/"|
-|--time|-t|Time between outputs|`Int64`|5|
+|--time|-t|Time (s) between outputs|`Int64`|5|
 |--level|-N| Level (N#) to be learned|`Int64`|4|
 
 
@@ -89,7 +89,7 @@ This program accept the next arguments:
 |argument|short|help|type|default|
 | --- | --- | --- | --- | --- |
 |--folder_path|-p|Path to the folder where the csv are|`String`|"../Datasets/KanjiBook/"|
-|--time|-t|Time between outputs|`Int64`|5|
+|--time|-t|Time (s) between outputs|`Int64`|5|
 |--start_chapter|-s| Chapter from where the program shall start|`Int64`|1|
 |--final_chapter|-f| Chapter until where the program shall end|`Int64`|1|
 

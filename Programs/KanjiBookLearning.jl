@@ -12,7 +12,7 @@ function ParseCommandline()
             arg_type = String
             default = "../Datasets/KanjiBook/"
         "--time", "-t"
-            help = "Time between outputs"
+            help = "Time (s) between outputs"
             arg_type = Int64
             default = 5
         "--start_chapter", "-s"

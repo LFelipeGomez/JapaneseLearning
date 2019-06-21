@@ -12,7 +12,7 @@ function ParseCommandline()
             arg_type = String
             default = "../Datasets/KanjisNs/"
         "--time", "-t"
-            help = "Time between outputs"
+            help = "Time (s) between outputs"
             arg_type = Int64
             default = 5
         "--level", "-N"
