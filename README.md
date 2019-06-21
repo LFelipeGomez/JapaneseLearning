@@ -96,17 +96,17 @@ This program accept the next arguments:
 #### Worflow
 
 1. Shows the number of kanji (given by the book) and the *keyword*
-2. Waits some seconds while the user should write on paper the respective kanji
+2. Waits some seconds (`--time`) while the user should write on paper the respective kanji
 
 
 #### Data Requirements
 A CSV file per lesson is required with the name `KanjiBookPalabras#.csv` where **#** indicates the number of the lesson. The columns required on each file are:
 
-| español |
-| --- |
-| campo de arroz |
-| boca |
-| ... |
+| español | BookIndex |
+| --- | --- |
+| campo de arroz | 14 |
+| boca | 11 |
+| ... | ... |
 
 ---
 
