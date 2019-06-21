@@ -1,3 +1,5 @@
+println("Loading packages...")
+
 using DataFrames
 using CSVFiles
 using ArgParse
@@ -27,16 +29,12 @@ function ParseCommandline()
     return parse_args(ArgumentsSettings)
 end
 
-parsed_args = ParseCommandline()
-
 function main(parsed_args)
     println("Parsed args:")
     for (arg,val) in parsed_args
         println("$arg => $val")
     end
 end
-
-main(parsed_args)
 
 #----------END ARGPARSE-------------
 
@@ -65,6 +63,11 @@ end
 
 #------------START EXECUTION------------
 
+println("Setting up configuration...")
+parsed_args = ParseCommandline()
+main(parsed_args)
+
+println("---Start program ;v---")
 start_chapter = parsed_args["start_chapter"]
 last_chapter = parsed_args["final_chapter"]
 time = parsed_args["time"]
@@ -72,4 +75,4 @@ path = parsed_args["folder_path"]
 KanjiBookLearning(start_chapter,last_chapter,time,path)
 
 #------------END EXECUTION---------------
-print("Done \\:v/")
+print("---Done \\:v/---")
