@@ -72,3 +72,4 @@ path = parsed_args["folder_path"]
 KanjiBookLearning(start_chapter,last_chapter,time,path)
 
 #------------END EXECUTION---------------
+print("Done \\:v/")

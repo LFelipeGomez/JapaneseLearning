@@ -62,6 +62,7 @@ time = parsed_args["time"]
 KanjiLearning(dataframe, time)
 
 #------------END EXECUTION---------------
+print("Done \\:v/")
 
 # TODO: completar lista kanjis id:6
 # - <https://github.com/LFelipeGomez/JapaneseLearning/issues/2>

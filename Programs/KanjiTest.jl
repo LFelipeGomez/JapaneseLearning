@@ -90,3 +90,4 @@ kanjis = DataFrame(load(path))
 KanjiMemorize(kanjis)
 
 #------------END EXECUTION---------------
+print("Done \\:v/")
