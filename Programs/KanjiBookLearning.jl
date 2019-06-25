@@ -46,9 +46,12 @@ function KanjiBookLearning(start_chapter=1,last_chapter=1, time=5, path="./Kanji
     for chapter in chapters
         chapter_number = string(chapter)
         chapter_name = "KanjiBookPalabras" * chapter_number * ".csv"
-        df_palabras_raw = DataFrame(load(path*"/" * chapter_name))
-        df_palabras = df_palabras_raw[:, [:español, :BookIndex]]
-        append!(dataframe, df_palabras)
+        df_palabras = DataFrame(load(path*"/" * chapter_name))
+        try
+            append!(dataframe, df_palabras)
+        catch e # Error when columns not match (kanji column)
+            df_palabras[:kanji] = "none"
+        end
     end
     long = size(dataframe)[1]
     index = collect(1:long)
@@ -76,4 +79,4 @@ path = parsed_args["folder_path"]
 KanjiBookLearning(start_chapter,last_chapter,time,path)
 
 #------------END EXECUTION---------------
-print("---Done \\:v/---")
+println("---Done \\:v/---")

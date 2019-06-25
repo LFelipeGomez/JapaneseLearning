@@ -66,6 +66,6 @@ folder_path = parsed_args["folder_path"]
 
 IndexAssigner(folder_path, start_chapter ,final_chapter)
 
-print("---Completed---")
+println("---Completed---")
 
 #------------END EXECUTION---------------
