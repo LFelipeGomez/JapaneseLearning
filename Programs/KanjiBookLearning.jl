@@ -46,7 +46,8 @@ function KanjiBookLearning(start_chapter=1,last_chapter=1, time=5, path="./Kanji
     for chapter in chapters
         chapter_number = string(chapter)
         chapter_name = "KanjiBookPalabras" * chapter_number * ".csv"
-        df_palabras = DataFrame(load(path*"/" * chapter_name))
+        df_palabras_raw = DataFrame(load(path*"/" * chapter_name))
+        df_palabras = df_palabras_raw[:, [:español, :BookIndex]]
         append!(dataframe, df_palabras)
     end
     long = size(dataframe)[1]
