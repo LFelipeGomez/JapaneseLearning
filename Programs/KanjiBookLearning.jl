@@ -42,7 +42,7 @@ end
 
 function KanjiBookLearning(start_chapter=1,last_chapter=1, time=5, path="./KanjiBook")
     chapters = collect(start_chapter:last_chapter)
-    dataframe = DataFrame(español = String[], BookIndex = Int64[])
+    dataframe = DataFrame(español = String[], BookIndex = Int64[], kanji = String[])
     for chapter in chapters
         chapter_number = string(chapter)
         chapter_name = "KanjiBookPalabras" * chapter_number * ".csv"
@@ -51,9 +51,12 @@ function KanjiBookLearning(start_chapter=1,last_chapter=1, time=5, path="./Kanji
             append!(dataframe, df_palabras)
         catch e # Error when columns not match (kanji column)
             df_palabras[:kanji] = "none"
+            append!(dataframe, df_palabras)
         end
+        total_palabras = size(dataframe,1)
     end
     long = size(dataframe)[1]
+    println("---Total de palabras: $long ---")
     index = collect(1:long)
     while length(index) != 0
         random = rand(index)
